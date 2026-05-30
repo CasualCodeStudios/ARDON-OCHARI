@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <button id="scrollTopBtn" aria-label="Scroll to top"><img src="right-up.png" alt="scroll up icon"></button>
@@ -30,16 +31,17 @@
         <a href="#services" class="snav-item" data-label="Services">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </a>
-        <a href="#contact-info" class="snav-item" data-label="Contact">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9c1.26 2.1 2.84 3.68 4.91 4.91l.76-.76a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </a>
         <a href="#faq" class="snav-item" data-label="FAQ">
     <svg viewBox="0 0 24 24" fill="none">
         <text x="12" y="13" text-anchor="middle" dominant-baseline="middle" 
               fill="var(--gold)" font-family="var(--mono)" font-size="12" 
               font-weight="500" letter-spacing="1">FAQ</text>
     </svg>
-</a>
+        </a>
+        <a href="#contact-info" class="snav-item" data-label="Contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9c1.26 2.1 2.84 3.68 4.91 4.91l.76-.76a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        
     </nav>
 
     <!-- SIDEBAR -->
@@ -294,11 +296,12 @@
                           <img src="branding.png" alt="branding icon">
                         </span>
                         <p class="cover-title">Communication</p>
-                        <div class="cover-desc">Achieved by:
+                        <div class="cover-desc">
+                          <p style="padding-bottom:.5rem; font-size:16px;">Achieved through:</p>
                           <ul>
                             <li>Active Participation</li>
                             <li>Oral Presentations</li>
-                            <li>Promote Reading Activities</li>
+                            <li>Promoting Reading Activities</li>
                           </ul>
                         
                         </div>
@@ -322,11 +325,12 @@
                           <img src="branding.png" alt="branding icon">
                         </span>
                         <p class="cover-title">Collaboration</p>
-                        <div class="cover-desc">Achieved by:
+                        <div class="cover-desc">
+                          <p style="padding-bottom:.5rem; font-size:16px;">Achieved through:</p>
                           <ul>
-                            <li>Facilitate Discussions</li>
-                            <li>Encourage Peer Learning</li>
-                            <li>Create Problem-Solving Tasks</li>
+                            <li>Facilitated Discussions</li>
+                            <li>Encouraging Peer Learning</li>
+                            <li>Creating Problem-Solving Tasks</li>
                           </ul>
                         
                         </div>
@@ -350,11 +354,27 @@
                           <img src="branding.png" alt="branding icon">
                         </span>
                         <p class="cover-title">Critical thinking</p>
-                        <div class="cover-desc">Achieved by:
+                        <div class="cover-desc">
+                          <p style="padding-bottom:.5rem; font-size:16px;">Achieved through:</p>
                           <ul>
-                            <li>Encouraging Inquiry and Investigation</li>
-                            <li>Facilitating Discussions and Debates</li>
-                            <li>Using Case Studies and Scenarios</li>
+                            <li>Encouraging;
+                            <ol>
+                              <li> Inquiry</li>
+                              <li> Investigation</li>
+                            </ol>
+                            </li>
+                            <li>Facilitating;
+                            <ol>
+                              <li> Discussions</li>
+                              <li> Debates</li>
+                            </ol>
+                            </li>
+                            <li>Using;
+                            <ol>
+                              <li> Case Studies</li>
+                              <li> Scenarios</li>
+                            </ol>
+                            </li>
                           </ul>
                         
                         </div>
@@ -378,7 +398,8 @@
                           <img src="branding.png" alt="branding icon">
                         </span>
                         <p class="cover-title">Creativity</p>
-                        <div class="cover-desc">Achieved by:
+                        <div class="cover-desc">
+                          <p style="padding-bottom:.5rem; font-size:16px;">Achieved through:</p>
                           <ul>
                             <li>Using Open-Ended Activities</li>
                             <li>Encouraging Learners to Ask Questions</li>
@@ -395,73 +416,6 @@
 
     </section>
 
-
-    <!-- CONTACT / SOCIAL -->
-    <section id="contact-info" class="contacts-places">
-
-        <!-- Falling squares canvas -->
-        <div class="falling-squares-canvas" id="contactSquaresCanvas"></div>
-
-        <span class="section-label">Reach Out</span>
-        <!-- Section title -->
-        <h2 class="contact-title">Contact Us</h2>
-
-        <!-- Two-column grid: socials LEFT | contact info RIGHT -->
-        <div class="contact-inner">
-
-            <!-- LEFT: original socials stacked vertically -->
-
-
-            <!-- RIGHT: original tooltip contact info -->
-            <!-- From Uiverse.io by gharsh11032000 --> 
-<div class="form-container">
-      <form class="form">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" required="">
-        </div>
-        <div class="form-group">
-          <label for="textarea">How Can We Help You?</label>
-          <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
-        </div>
-        <button class="form-submit-btn" type="submit">Submit</button>
-      </form>
-    </div>
-
-<!-- From Uiverse.io by vinodjangid07 --> 
-<div class="socialsWrapper" id="socials">
-  <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; color: #fed; text-align: center; padding-bottom: 1rem;">Follow My Socials</h3>
-<div class="card">
-  <div class="background">
-  </div>
-  <div class="logos">
-       <p style="color: #fae1c7c8; text-align: center; font-family: HollyBerryPop, sans-serif;">Socials</p>
-   <img src="logo.png" alt="">
-
-  </div>
-
-  <a href="https://www.tiktok.com/@meddusaaiinsights" target="_blank"><div class="box box1"><span class="icon"><img src="tik-tok.png" alt="tiktok icon"></span></div></a>
-
-  <a href="https://www.youtube.com/channel/UC42s91SIvfjpY1xrY-eaDwA" target="_blank"><div class="box box2"> <span class="icon"><img src="youtube.png" alt="youtube icon"></span></div></a>
-
-  <a href="https://www.instagram.com/kingmeddusa/?hl=en" target="_blank"><div class="box box3"><span class="icon"><img src="instagram.png" alt="instagram icon"></span></div></a>
-
-<script>
-document.querySelectorAll(".box").forEach(link => {
-    link.addEventListener("click", function(event) {
-        event.preventDefault(); // Stops redirection
-        console.log("Link click blocked");
-    });
-});
-</script>
-
-  <div class="box box4"></div>
-</div>
-</div>
-
-        </div><!-- /contact-inner -->
-
-    </section>
 
 <!-- ══════════════════════════════════════
    FAQ SECTION
@@ -534,6 +488,74 @@ document.querySelectorAll(".box").forEach(link => {
  
 </section>
  
+
+    <!-- CONTACT / SOCIAL -->
+    <section id="contact-info" class="contacts-places">
+
+        <!-- Falling squares canvas -->
+        <div class="falling-squares-canvas" id="contactSquaresCanvas"></div>
+
+        <span class="section-label">Reach Out</span>
+        <!-- Section title -->
+        <h2 class="contact-title">Contact Us</h2>
+
+        <!-- Two-column grid: socials LEFT | contact info RIGHT -->
+        <div class="contact-inner">
+
+            <!-- LEFT: original socials stacked vertically -->
+
+
+            <!-- RIGHT: original tooltip contact info -->
+            <!-- From Uiverse.io by gharsh11032000 --> 
+<div class="form-container">
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="textarea">How Can We Help You?</label>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+        </div>
+        <button class="form-submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+<!-- From Uiverse.io by vinodjangid07 --> 
+<div class="socialsWrapper" id="socials">
+  <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; color: #fed; text-align: center; padding-bottom: 1rem;">Follow My Socials</h3>
+<div class="card">
+  <div class="background">
+  </div>
+  <div class="logos">
+       <p style="color: #fae1c7c8; text-align: center; font-family: HollyBerryPop, sans-serif;">Socials</p>
+   <img src="logo.png" alt="">
+
+  </div>
+
+  <a href="https://www.tiktok.com/@meddusaaiinsights" target="_blank"><div class="box box1"><span class="icon"><img src="tik-tok.png" alt="tiktok icon"></span></div></a>
+
+  <a href="https://www.youtube.com/channel/UC42s91SIvfjpY1xrY-eaDwA" target="_blank"><div class="box box2"> <span class="icon"><img src="youtube.png" alt="youtube icon"></span></div></a>
+
+  <a href="https://www.instagram.com/kingmeddusa/?hl=en" target="_blank"><div class="box box3"><span class="icon"><img src="instagram.png" alt="instagram icon"></span></div></a>
+
+<script>
+document.querySelectorAll(".box").forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault(); // Stops redirection
+        console.log("Link click blocked");
+    });
+});
+</script>
+
+  <div class="box box4"></div>
+</div>
+</div>
+
+        </div><!-- /contact-inner -->
+
+    </section>
+
  
 <!-- ══════════════════════════════════════
    FOOTER
